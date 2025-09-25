@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/images/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather-app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body class="bg-[#02012b] text-white">
+  <header>
+    <div class="myContainer my-5">
+      <div class="flex items-center justify-between">
+        <img src="/src/images/logo.svg" alt="" class="h-8 w-35 md:h-auto md:w-auto">
+        <div class="relative inline-block">
+          <button id="unitsBtn"
+            class="flex bg-[#3c3b5d] hover:bg-white/20 border-1 border-white py-1 px-1 rounded-lg cursor-pointer">
+            <img src="/src/images/icon-units.svg" alt="">
+            <h4 class="mx-1">Units</h4>
+            <img src="/src/images/icon-dropdown.svg" alt="">
+          </button>
+          <div id="unitsMenu"
+            class="absolute right-0 mt-2 p-1 w-52 bg-[#25253f] border border-white/10 rounded-lg shadow-lg hidden z-10 ">
+            <ul>
+              <li class="px-4 py-2 bg-[#3c3b5d] hover:bg-white/20 border-1 rounded-lg cursor-pointer">Switch to
+                Imperial</li>
+              <li class="px-4 py-2 text-white/50 cursor-pointer">Temperature</li>
+              <li
+                class="flex items-center justify-between px-4 py-2 bg-[#3c3b5d] hover:bg-white/20 rounded-lg  cursor-pointer">
+                Celsius (°C) <img src="/src/images/icon-checkmark.svg" alt=""> </li>
+              <li class="px-4 py-2 hover:bg-white/20 rounded-lg cursor-pointer">Fahrenheit (°F)</li>
+              <hr class="text-white/10">
+              <li class="px-4 py-2 text-white/50 cursor-pointer">Wind Speed</li>
+              <li
+                class="flex items-center justify-between px-4 py-2 bg-[#3c3b5d] hover:bg-white/20 rounded-lg cursor-pointer">
+                km/h <img src="/src/images/icon-checkmark.svg" alt=""> </li>
+              <li class="px-4 py-2 hover:bg-white/20 rounded-lg cursor-pointer">mph</li>
+              <hr class="text-white/10">
+
+              <li class="px-4 py-2 text-white/50 cursor-pointer">Temperature</li>
+              <li
+                class="flex items-center justify-between px-4 py-2 bg-[#3c3b5d] hover:bg-white/20 rounded-lg cursor-pointer">
+                Millimeters (mm)
+                <img src="/src/images/icon-checkmark.svg" alt="">
+              </li>
+              <li class="px-4 py-2 hover:bg-white/20 rounded-lg cursor-pointer">Inches (in)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="myContainer">
+      <div class="flex items-center justify-center text-center">
+        <h2 class="bricolage text-4xl font-bold mb-10">How's the sky looking today?</h2>
+      </div>
+      <div class="md:flex md:items-center md:justify-center gap-5 my-5">
+        <input type="search" name="search" id="input_search" placeholder="Search for a place..."
+          class="w-full md:max-w-[330px] outline-none bg-[#25253f] py-2 px-10 rounded-lg">
+        <div class="mt-5 md:mt-0">
+          <button class="mb-5 md:m-0">
+            <a href="#" id="hamburger"
+              class="text-lg bg-[#4657d9] py-2 px-30 md:px-4 rounded-lg hover:bg-blue-900 duration-300">Search</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="myContainer grid md:grid-cols-[2fr_1fr] gap-5">
+      <div class="myContainer mt-5 md:m-0">
+        <div class="relative bg-image2 lg:bg-image rounded-2xl">
+          <div class="md:flex md:items-center md:justify-between md:px-10 md:py-10">
+            <div class="text-center sm:pt-10 md:pt-0">
+              <h3 class="text-2xl font-bold">Berlin, Germany</h3>
+              <p class="text-lg"><span class="hover:text-white/70 duration-300 cursor-pointer">Tuesday</span>,Aug 5,
+                2025</p>
+            </div>
+            <div class="flex items-center justify-center">
+              <img src="/src/images/icon-sunny.webp" alt="" class="w-25">
+              <h2 class="text-6xl font-semibold italic">20</h2>
+              <span class="text-2xl font-extrabold mb-10">o</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 my-5">
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-4">
+            <span>Feels like</span>
+            <div class="flex">
+              <h4 class="text-3xl">18</h4>
+              <span class="text-sm">o</span>
+            </div>
+          </div>
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-4">
+            <span>Humidity</span>
+            <h4 class="text-3xl mt-5">46%</h4>
+          </div>
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-4">
+            <span>Wind</span>
+            <h4 class="text-2xl mt-5">14 km/h</h4>
+          </div>
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-4">
+            <span>Preciptation</span>
+            <h4 class="text-3xl mt-5">0 mm</h4>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Daily forecast</h3>
+          <div class="grid grid-cols-3 md:grid-cols-4 gap-5">
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">Tue</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-rain.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">20</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">14</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">Wed</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-drizzle.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">21</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">15</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">Thu</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-sunny.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">24</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">14</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">Fri</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-partly-cloudy.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">25</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">13</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">Sat</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-storm.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">21</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">15</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">sun</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-snow.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">25</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">16</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#25253f] text-center rounded-lg">
+              <h4 class="py-3">Mon</h4>
+              <img class="size-20 block mx-auto" src="/src/images/icon-fog.webp" alt="">
+              <div class="flex items-center justify-between px-2 gap-2 mb-2">
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">24</h4>
+                  <span class="text-xs">o</span>
+                </div>
+                <div class="flex">
+                  <h4 class="text-lg font-stretch-normal">15</h4>
+                  <span class="text-xs">o</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="myContainer">
+        <div class="bg-[#25253f] rounded-2xl py-5 px-3">
+          <div class="flex items-center justify-between">
+            <h2 class="text-md font-semibold gap-2">Hourly forecast</h2>
+            <div class="flex bg-[#3c3b5d] rounded-md py-[6px] px-[12px] md:px-1 gap-1 shadow-2xl">
+              <span class="md:text-sm">Tuesday</span>
+              <img class="md:w-2" src="/src/images/icon-dropdown.svg" alt="">
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-overcast.webp" alt="" class="h-10">
+              <h3 class="text-xl">3 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">20</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-partly-cloudy.webp" alt="" class="h-10">
+              <h3 class="text-xl">4 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">20</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-sunny.webp" alt="" class="h-10">
+              <h3 class="text-xl">5 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">20</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-overcast.webp" alt="" class="h-10">
+              <h3 class="text-xl">6 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">19</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-snow.webp" alt="" class="h-10">
+              <h3 class="text-xl">7 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">18</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-fog.webp" alt="" class="h-10">
+              <h3 class="text-xl">8 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">18</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-snow.webp" alt="" class="h-10">
+              <h3 class="text-xl">9 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">17</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
+            <div class="flex items-center">
+              <img src="/src/images/icon-overcast.webp" alt="" class="h-10">
+              <h3 class="text-xl">10 PM</h3>
+            </div>
+            <div class="flex">
+              <h4 class="text-lg">17</h4>
+              <span class="text-xs">o</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

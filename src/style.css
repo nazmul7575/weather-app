@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+body {
+	font-family: "DM Sans", sans-serif;
+}
+.bricolage {
+	font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bg-image {
+	background-image: url(./images/bg-today-large.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px;
+}
+
+.bg-image2 {
+	background-image: url(./images/bg-today-small.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px;
+}
+
+@layer components {
+	.myContainer {
+		width: 100%;
+		margin: 0 auto;
+		@media (min-width: 320px) {
+			max-width: 300px;
+		}
+		@media (min-width: 640px) {
+			max-width: 600px;
+		}
+
+		@media (min-width: 768px) {
+			max-width: 720px;
+		}
+
+		@media (min-width: 1024px) {
+			max-width: 960px;
+		}
+
+		@media (min-width: 1390px) {
+			max-width: 1390px;
+		}
+	}
+}

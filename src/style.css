@@ -13,7 +13,7 @@ body {
 
 .bg-image {
 	background-image: url(./images/bg-today-large.svg);
-	background-position: center;
+	background-position: calc(w-300px, h-200px);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 20px;

@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="bg-[#02012b] text-white">
+<body class="bg-[#02012b] text-white py-20">
   <header>
     <div class="myContainer my-5">
       <div class="hidden">
@@ -102,7 +102,7 @@
       <div class="flex items-center justify-center text-center">
         <h2 class="bricolage text-4xl font-bold mb-10">How's the sky looking today?</h2>
       </div>
-      <div class="md:flex md:items-center md:justify-center gap-5 my-5">
+      <div class="grid md:flex md:items-center md:justify-center lg:pl-19 xl:pl-52 gap-5 my-5">
         <input type="search" name="city" id="input_city" placeholder="Search for a place..."
           class="w-full md:max-w-[330px] outline-none bg-[#25253f] focus:outline-none focus:ring-2 focus:ring-white focus:border-2 focus:border-[#02012b] py-2 px-10 rounded-lg">
         <a href="#" id="hamburger"
@@ -128,30 +128,30 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 my-5">
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-4">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-5">
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-2">
             <span>Feels like</span>
             <div class="flex">
               <h4 class="text-3xl">18</h4>
               <span class="text-sm">o</span>
             </div>
           </div>
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-4">
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-2">
             <span>Humidity</span>
             <h4 class="text-3xl mt-5">46%</h4>
           </div>
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-4">
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-2">
             <span>Wind</span>
             <h4 class="text-2xl mt-5">14 km/h</h4>
           </div>
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-4">
+          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-2">
             <span>Preciptation</span>
             <h4 class="text-3xl mt-5">0 mm</h4>
           </div>
         </div>
         <div>
           <h3 class="text-lg font-semibold mb-2">Daily forecast</h3>
-          <div class="grid grid-cols-3 md:grid-cols-4 gap-5">
+          <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-5">
             <div class="bg-[#25253f] text-center rounded-lg">
               <h4 class="py-3">Tue</h4>
               <img class="size-20 block mx-auto" src="/src/images/icon-rain.webp" alt="">
@@ -254,7 +254,7 @@
         </div>
       </div>
       <div class="myContainer">
-        <div class="bg-[#25253f] rounded-2xl py-5 px-3">
+        <div class="bg-[#25253f] rounded-2xl py-3 px-3">
           <div class="flex items-center justify-between">
             <h2 class="text-md font-semibold gap-2">Hourly forecast</h2>
             <button id="dayBtn"
@@ -263,7 +263,7 @@
               <img class="md:w-2" src="/src/images/icon-dropdown.svg" alt="">
             </button>
             <div id="dayMenu"
-              class="absolute right-30 top-73 mt-2 p-2 w-40 bg-[#25253f] border border-white/10 rounded-lg shadow-lg hidden z-10">
+              class="absolute right-30 top-73 md:right-28 md:top-95 lg:right-65 mt-2 p-2 w-40 bg-[#25253f] border border-white/10 rounded-lg shadow-lg hidden z-10">
               <ul>
                 <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Monday</li>
                 <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Tuesday</li>
@@ -360,268 +360,6 @@
       </div>
     </div>
   </section>
-
-  <!-- 68 deg -->
-  <section class="hidden">
-    <div class="myContainer my-5 grid md:grid-cols-[2fr_1fr] gap-5">
-      <div class="myContainer mt-5 md:m-0">
-        <div class="relative bg-image2 lg:bg-image rounded-2xl">
-          <div class="md:flex md:items-center md:justify-between md:px-10 md:py-10">
-            <div class="text-center sm:pt-10 md:pt-0">
-              <h3 class="text-2xl font-bold">Berlin, Germany</h3>
-              <p class="text-lg"><span class="hover:text-white/70 duration-300 cursor-pointer">Tuesday</span>,Aug 5,
-                2025</p>
-            </div>
-            <div class="flex items-center justify-center">
-              <img src="/src/images/icon-sunny.webp" alt="" class="w-25">
-              <h2 class="text-6xl font-semibold italic">68</h2>
-              <span class="text-2xl font-extrabold mb-10">o</span>
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 gap-4 my-5">
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-4">
-            <span>Feels like</span>
-            <div class="flex">
-              <h4 class="text-3xl">64</h4>
-              <span class="text-sm">o</span>
-            </div>
-          </div>
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-4">
-            <span>Humidity</span>
-            <h4 class="text-3xl mt-5">46%</h4>
-          </div>
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-4">
-            <span>Wind</span>
-            <h4 class="text-2xl mt-5">9 km/h</h4>
-          </div>
-          <div class="bg-[#25253f] flex flex-col items-start justify-between p-4 rounded-lg mt-1 md:mt-4">
-            <span>Preciptation</span>
-            <h4 class="text-3xl mt-5">0 in</h4>
-          </div>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-2">Daily forecast</h3>
-          <div class="grid grid-cols-3 md:grid-cols-4 gap-5">
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">Tue</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-rain.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">68</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">57</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">Wed</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-drizzle.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">70</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">59</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">Thu</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-sunny.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">75</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">57</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">Fri</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-partly-cloudy.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">77</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">55</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">Sat</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-storm.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">70</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">59</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">sun</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-snow.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">77</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">61</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#25253f] text-center rounded-lg">
-              <h4 class="py-3">Mon</h4>
-              <img class="size-20 block mx-auto" src="/src/images/icon-fog.webp" alt="">
-              <div class="flex items-center justify-between px-2 gap-2 mb-2">
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">75</h4>
-                  <span class="text-xs">o</span>
-                </div>
-                <div class="flex">
-                  <h4 class="text-lg font-stretch-normal">59</h4>
-                  <span class="text-xs">o</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="myContainer">
-        <div class="bg-[#25253f] rounded-2xl py-5 px-3">
-          <div class="flex items-center justify-between">
-            <h2 class="text-md font-semibold gap-2">Hourly forecast</h2>
-            <button id="dayBtn"
-              class="flex bg-[#3c3b5d] hover:bg-white/20 rounded-md py-[6px] px-[12px] md:px-1 gap-1 shadow-2xl">
-              <span class="md:text-sm cursor-pointer">Tuesday</span>
-              <img class="md:w-2" src="/src/images/icon-dropdown.svg" alt="">
-            </button>
-            <div id="dayMenu"
-              class="absolute right-30 top-73 mt-2 p-2 w-40 bg-[#25253f] border border-white/10 rounded-lg shadow-lg hidden z-10">
-              <ul>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Monday</li>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Tuesday</li>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Wednesday</li>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Thursday</li>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Friday</li>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Saturday
-                </li>
-                <li class="py-2 pl-2 hover:bg-[#3c3b5d] rounded-lg cursor-pointer">Sunday</li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-overcast.webp" alt="" class="h-10">
-              <h3 class="text-xl">3 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">68</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-partly-cloudy.webp" alt="" class="h-10">
-              <h3 class="text-xl">4 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">68</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-sunny.webp" alt="" class="h-10">
-              <h3 class="text-xl">5 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">68</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-overcast.webp" alt="" class="h-10">
-              <h3 class="text-xl">6 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">66</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-snow.webp" alt="" class="h-10">
-              <h3 class="text-xl">7 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">66</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-fog.webp" alt="" class="h-10">
-              <h3 class="text-xl">8 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">64</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-snow.webp" alt="" class="h-10">
-              <h3 class="text-xl">9 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">63</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between bg-[#3c3b5d] rounded-lg px-3 py-2 mt-5">
-            <div class="flex items-center">
-              <img src="/src/images/icon-overcast.webp" alt="" class="h-10">
-              <h3 class="text-xl">10 PM</h3>
-            </div>
-            <div class="flex">
-              <h4 class="text-lg">63</h4>
-              <span class="text-xs">o</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
   <script type="module" src="/src/main.js"></script>
 </body>
 

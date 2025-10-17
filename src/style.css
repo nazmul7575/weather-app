@@ -15,8 +15,7 @@ body {
 	background-image: url(./images/bg-today-large.svg);
 	background-position: calc(w-300px, h-200px);
 	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 20px;
+	background-size: initial;
 }
 
 .bg-image2 {
@@ -24,7 +23,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 10px;
 }
 
 @layer components {

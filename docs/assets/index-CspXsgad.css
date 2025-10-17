@@ -879,14 +879,14 @@ body {
 	font-style: italic;
 }
 .bg-image {
-	background-image: url(/assets/bg-today-large-CqYszFxp.svg);
+	background-image: url(./bg-today-large-CqYszFxp.svg);
 	background-position: calc(w-300px, h-200px);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 20px;
 }
 .bg-image2 {
-	background-image: url(/assets/bg-today-small-DEQrvfY6.svg);
+	background-image: url(./bg-today-small-DEQrvfY6.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
